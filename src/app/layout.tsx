@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     description: "Boostez votre quotidien avec la FitLife Pro 5+ ! Une montre connectée ultra-polyvalente dotée d’un écran AMOLED HD, d’un suivi précis de vos activités sportives, de vos données de santé et d’une autonomie record de 10 jours.",
     images: [
       {
-        url: "/Prevview_website.png",
+        url: "https://card-competition.vercel.app/Prevview_website.png",
         alt: "Montre connectée FitLife Pro 5+",
         width: 1200,
         height: 630,
