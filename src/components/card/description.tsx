@@ -12,13 +12,17 @@ interface DescriptionProps {
     reduction: number,
 }
 
+interface StarProps {
+    filled: boolean;
+}
+
 const CardDescription = (props: DescriptionProps): JSX.Element => {
     const [enterOnDiv, setEnterOnDiv] = useState(false)
     const [svgClicked, setSvgClicked] = useState(false)
     const ReductionPrice = props.price - ((props.price*props.reduction)/100)
     const PriceAfterReduction = parseFloat(ReductionPrice.toFixed(2));
 
-    const Star = ({filled}: any): JSX.Element => {
+    const Star = ({ filled }: StarProps): JSX.Element => {
         return (
             <motion.svg
                 key={filled ? 'filled' : 'unfilled'}
