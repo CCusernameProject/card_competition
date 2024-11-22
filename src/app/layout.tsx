@@ -2,17 +2,6 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = localFont({
-  src: "./fonts/GeistVF.woff",
-  variable: "--font-geist-sans",
-  weight: "100 900",
-});
-const geistMono = localFont({
-  src: "./fonts/GeistMonoVF.woff",
-  variable: "--font-geist-mono",
-  weight: "100 900",
-});
-
 export const metadata: Metadata = {
   title: "Montre connectée FitLife Pro 5+",
   description: "Boostez votre quotidien avec la FitLife Pro 5+ ! Une montre connectée ultra-polyvalente dotée d’un écran AMOLED HD, d’un suivi précis de vos activités sportives, de vos données de santé et d’une autonomie record de 10 jours.",
@@ -38,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`antialiased`}
       >
         {children}
       </body>
