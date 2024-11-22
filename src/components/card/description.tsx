@@ -18,7 +18,7 @@ const CardDescription = (props: DescriptionProps): JSX.Element => {
     const ReductionPrice = props.price - ((props.price*props.reduction)/100)
     const PriceAfterReduction = parseFloat(ReductionPrice.toFixed(2));
 
-    const Star = ({filled, delay}: any): JSX.Element => {
+    const Star = ({filled}: any): JSX.Element => {
         return (
             <motion.svg
                 key={filled ? 'filled' : 'unfilled'}
@@ -52,7 +52,7 @@ const CardDescription = (props: DescriptionProps): JSX.Element => {
                 <div className="flex items-center gap-[0.5rem] mt-[0.5rem]">
                     <div className="flex gap-[0.25rem]">
                         {Array.from({length: 5}, (_, index) => index + 1).map((star) => (
-                            <Star key={star} filled={star <= props.star ? true : false} delay={star*0.2} />
+                            <Star key={star} filled={star <= props.star ? true : false} />
                         ))}
                     </div>
                     <p className="text-[0.75rem] text-[#020712]/50">{props.notes} notes</p>
