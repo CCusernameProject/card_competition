@@ -65,7 +65,7 @@ const CardDescription = (props: DescriptionProps): JSX.Element => {
                     <div className=" relative">
                         <p className="text-[#020712]/50 inline-block relative">{props.price}€<span className="bg-[#020712]/50 w-full h-[0.05rem] top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] absolute"></span></p>
                     </div>
-                    <p className="text-[#020712] font-bold text-[3rem] leading-[2.063rem] mt-[0.25rem]">{PriceAfterReduction}€</p>
+                    <h2 className="text-[#020712] font-bold text-[3rem] leading-[2.063rem] mt-[0.25rem]">{PriceAfterReduction}€</h2>
                 </div>
             </main>
             <footer className="flex w-full justify-between mt-[3rem]">
